@@ -3,8 +3,15 @@ import { connect } from 'react-redux'
 
 
 const SongDetail = (props) =>{
-console.log(props)
-if (props) return <div>{props.Title}</div>
+
+if (props !== null) {return <div>
+    <h2>{props.Title}</h2>
+    <div>{props.Author}</div>
+    <div>{props.Duration}</div>
+    </div>}
+
+    return <h2>Please select a song</h2>
+    
 }
 
 const mapStateToProps = state =>{
