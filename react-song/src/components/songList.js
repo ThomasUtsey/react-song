@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import {selectSong} from '../action'
 
 const SongList = (props)=>{
-    console.log(props)
+    
     const songLine = props.songs.map(e =>{
         return <div>
            <div> {e.Title}</div>
